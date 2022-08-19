@@ -1,6 +1,4 @@
-function caesar(offset, input) {
-  // Your Code Here
-}
+function caesar(offset, input) {}
 
 console.log(caesar(3, "abc")); // def
 console.log(caesar(2, "alta")); // cnvc

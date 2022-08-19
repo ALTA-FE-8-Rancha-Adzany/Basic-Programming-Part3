@@ -1,5 +1,18 @@
 function arrayUnique(arrayA, arrayB) {
-  // Your Code Here
+  let result = [];
+  for (let i = 0; i < arrayA.length; i++) {
+    let double = 0;
+    for (let j = 0; j < arrayB.length; j++) {
+      if (arrayA[i] == arrayB[j]) {
+        double += 1;
+      }
+    }
+    if (double == 0) {
+      result.push(arrayA[i]);
+    }
+  }
+
+  return result;
 }
 
 console.log(arrayUnique([1, 2, 3, 4], [1, 3, 5, 10, 16])); // [2, 4]
